@@ -1,4 +1,3 @@
-# neo4j_import.py (Neo4j 6+ compatible)
 
 from neo4j import GraphDatabase
 import pandas as pd

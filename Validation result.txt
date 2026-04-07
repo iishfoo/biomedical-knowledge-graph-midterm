@@ -1,0 +1,78 @@
+========== NODE COUNTS ==========
+Total Drugs     : 5
+Total Diseases  : 5
+Total Genes     : 5
+Total Nodes     : 15
+
+========== RELATIONSHIP COUNTS ==========
+TREATS relationships          : 5
+ASSOCIATED_WITH relationships : 5
+Total Relationships           : 10
+
+========== ALL DRUGS ==========
+  D1 -> Aspirin
+  D2 -> Ibuprofen
+  D3 -> Paracetamol
+  D4 -> Metformin
+  D5 -> Atorvastatin
+
+========== ALL DISEASES ==========
+  DS1 -> Fever
+  DS2 -> Inflammation
+  DS3 -> Diabetes
+  DS4 -> Cholesterol
+  DS5 -> Headache
+
+========== ALL GENES ==========
+  G1 -> BRCA1
+  G2 -> TP53
+  G3 -> INS
+  G4 -> APOE
+  G5 -> EGFR
+
+========== DRUG TREATS DISEASE ==========
+  Aspirin  --TREATS-->  Fever
+  Atorvastatin  --TREATS-->  Cholesterol
+  Ibuprofen  --TREATS-->  Inflammation
+  Metformin  --TREATS-->  Diabetes
+  Paracetamol  --TREATS-->  Headache
+
+========== GENE ASSOCIATED WITH DISEASE ==========
+  APOE  --ASSOCIATED_WITH-->  Cholesterol
+  BRCA1  --ASSOCIATED_WITH-->  Inflammation
+  EGFR  --ASSOCIATED_WITH-->  Fever
+  INS  --ASSOCIATED_WITH-->  Diabetes
+  TP53  --ASSOCIATED_WITH-->  Inflammation
+
+========== DISEASE HUB ANALYSIS ==========
+(Which disease has most connections?)
+  Inflammation  ->  3 connection(s)
+  Fever  ->  2 connection(s)
+  Diabetes  ->  2 connection(s)
+  Cholesterol  ->  2 connection(s)
+  Headache  ->  1 connection(s)
+
+========== EXPORTING SUMMARY TO CSV ==========
+Summary exported to: knowledge_graph_summary.csv
+source_id  source_name    relationship target_id  target_name
+       D1      Aspirin          TREATS       DS1        Fever
+       D2    Ibuprofen          TREATS       DS2 Inflammation
+       D3  Paracetamol          TREATS       DS5     Headache
+       D4    Metformin          TREATS       DS3     Diabetes
+       D5 Atorvastatin          TREATS       DS4  Cholesterol
+       G1        BRCA1 ASSOCIATED_WITH       DS2 Inflammation
+       G2         TP53 ASSOCIATED_WITH       DS2 Inflammation
+       G3          INS ASSOCIATED_WITH       DS3     Diabetes
+       G4         APOE ASSOCIATED_WITH       DS4  Cholesterol
+       G5         EGFR ASSOCIATED_WITH       DS1        Fever
+
+========== FINAL VALIDATION SUMMARY ==========
+  Drugs          : 5
+  Diseases       : 5
+  Genes          : 5
+  Total Nodes    : 15
+  TREATS         : 5
+  ASSOCIATED_WITH: 5
+  Total Rels     : 10
+
+Knowledge Graph Analysis Complete!
