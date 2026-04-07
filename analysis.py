@@ -1,5 +1,4 @@
-# analysis.py - Biomedical Knowledge Graph Analysis
-# Neo4j 6+ compatible - Windows Safe (no emojis)
+
 
 from neo4j import GraphDatabase
 import pandas as pd
