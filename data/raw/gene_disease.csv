@@ -1,0 +1,6 @@
+gene_id,disease_id,relation
+G1,DS2,associated_with
+G2,DS2,associated_with
+G3,DS3,associated_with
+G4,DS4,associated_with
+G5,DS1,associated_with

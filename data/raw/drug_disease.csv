@@ -1,0 +1,6 @@
+drug_id,disease_id,relation
+D1,DS1,treats
+D2,DS2,treats
+D3,DS5,treats
+D4,DS3,treats
+D5,DS4,treats
